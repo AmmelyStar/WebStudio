@@ -1051,6 +1051,7 @@ transform: translateY(0%);
 }
 
 .input-footer{
+    display: block;
     padding-left: 16px;
     font-size: 12px;
     font-family: Roboto;
