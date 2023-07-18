@@ -115,8 +115,8 @@ img {
 
 /*mobile menu*/
 .menu-toggle {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 22px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -124,12 +124,12 @@ img {
     padding: 0;
     border: none;
     outline: none;
-    border: 1px solid var(--border-color);
+    border: 1px solid #E7E9FC;
     background-color: #fff;
 
 }
 .menu-toggle-icon{
-    fill: #2E2F42;
+    stroke: #2E2F42;
     
 
 }
