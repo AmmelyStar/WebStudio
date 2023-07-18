@@ -112,6 +112,13 @@ img {
     overflow: hidden;
 }
 
+
+/*mobile menu*/
+.menu-toggle-icon{
+    fill: #2E2F42;
+
+}
+
 /*header*/
 
 .header {
