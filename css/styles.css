@@ -44,7 +44,7 @@ body {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 /* Basis styles for small devices*/
@@ -247,6 +247,12 @@ img {
     gap: 56px;
     padding-top: 8px;
 }
+
+@media only screen and (max-width: 449px) {
+    .tel-link {
+        font-size: 30px;
+    }
+}
 /*header*/
 
 .header {
@@ -263,11 +269,26 @@ img {
     display: flex; */
  }
 
+ @media only screen and (min-width: 768px) {
+     .header {
+         padding: 0;
+     }
+ }
+ 
 
 .header-container {
     display: flex;
     align-items: center;
 }
+
+@media only screen and (min-width: 1158px) {
+   .header-container{
+    justify-content: space-between;
+    
+  }
+}
+
+
 
 /*logo start*/
 .logo-web {
@@ -277,13 +298,23 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 120px;
+    margin-right: 249px;
     color: var(--accent-cl);
-    /* margin-right: 76px; */
     display: inline-block;
     
 }
+@media only screen and (min-width: 768px) {
+    .logo-web {
+        margin-right: 120px;
+    }
+}
 
+@media only screen and (min-width: 1158px) {
+   .logo-web{
+    margin-right: 76px; 
+    
+  }
+}
 
 
 .logo-studio-nav {
@@ -321,6 +352,7 @@ img {
 .nav-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 
 }
 
@@ -388,7 +420,17 @@ img {
 .address {
     font-style: normal;
     margin-left: auto;
+    letter-spacing: 0.02em;
+    font-size: 12px;
 }
+
+@media only screen and (min-width: 1158px) {
+   .address{
+    font-size: 16px;    
+  }
+}
+
+
 
 
 
@@ -413,6 +455,24 @@ img {
     gap: 40px;
 
 }
+@media only screen and (min-width: 768px) {
+    .address-list {
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+   .address-list{
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    
+  }
+}
 
 .number .link:hover,
 .number .link:focus {
@@ -426,7 +486,9 @@ img {
     padding: 188px 0;
     
     margin: 0 auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-hero.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)),
+     url(../images/bg-hero/Dark-bg@1x.png);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -434,20 +496,92 @@ img {
 
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero {
+     background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+     rgba(46, 47, 66, 0.70)),
+     url(../images/bg-hero/Dark-bg@2x.png);
+    } 
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+         rgba(46, 47, 66, 0.70)),
+         url(../images/bg-hero/Dark-bg@1x.png);
+    }
+}
+
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+        url(../images/bg-hero/Dark-bg@2x.png);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+   .hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+         rgba(46, 47, 66, 0.70)),
+        url(../images/bg-hero/Dark-bg@1x.png);    
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+        url(../images/bg-hero/Dark-bg@2x.png);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+   .hero{
+    padding: 188px 0;
+    margin-bottom: 120px;
+    
+  }
+}
+
+
+
 .hero-container{
     
 }
 
 .hero-title {
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-white-cl);
-    max-width: 496px;
+    max-width: 320px;
     margin: 0 auto;
     margin-bottom: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+   .hero-title{
+    font-size: 56px;
+    margin-bottom: 36px;
+    max-width: 496px;    
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+   .hero-title{
+    margin-bottom: 48px;
+    
+  }
 }
 
 .button {
